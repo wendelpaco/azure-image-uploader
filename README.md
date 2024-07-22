@@ -15,5 +15,5 @@ Este projeto é uma aplicação Node.js que permite o upload de imagens para o A
 1. Clone o repositório para sua máquina local:
 
    ```sh
-   git clone https://github.com/wendelpaco/upload-image.git
-   cd upload-image
+   git clone https://github.com/wendelpaco/azure-image-uploader.git
+   cd azure-image-uploader
