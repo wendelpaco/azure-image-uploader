@@ -1,0 +1,38 @@
+{
+  "name": "azure-image-uploader",
+  "version": "1.0.0",
+  "main": "dist/server.js",
+  "author": {
+    "name": "Wendel Santos",
+    "email": "wendelpaco@gmail.com",
+    "url": "https://github.com/wendelpaco"
+  },
+  "description": "Um aplicativo Node.js para carregar imagens no Armazenamento de Blobs do Azure e retornar a URL da imagem carregada. Este aplicativo usa Express.js e Multer para lidar com uploads de arquivos e o Azure Storage Blob SDK para interagir com o Azure Blob Storage.",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/server.js",
+    "dev": "ts-node-dev src/server.ts",
+    "upload-sas": "ts-node-dev src/sas-token.ts",
+    "upload:local": "ts-node-dev src/upload-local.ts"
+  },
+  "dependencies": {
+    "@azure/storage-blob": "^12.23.0",
+    "axios": "^1.7.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "uuid": "^10.0.0"
+  },
+  "devDependencies": {
+    "@types/cors": "^2.8.17",
+    "@types/express": "^4.17.21",
+    "@types/multer": "^1.4.11",
+    "@types/node": "^20.14.11",
+    "@types/uuid": "^10.0.0",
+    "ts-node": "^10.9.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.5.3"
+  }
+}
